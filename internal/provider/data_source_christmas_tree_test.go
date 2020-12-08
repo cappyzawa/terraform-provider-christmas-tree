@@ -15,7 +15,7 @@ func TestAccDataSourceScaffolding(t *testing.T) {
 		ProviderFactories: providerFactories,
 		Steps: []resource.TestStep{
 			{
-				Config: testAccDataSourceScaffolding,
+				Config: testAccDataSourceChristmasTree,
 				Check: resource.ComposeTestCheckFunc(
 					resource.TestMatchResourceAttr(
 						"data.scaffolding_data_source.foo", "sample_attribute", regexp.MustCompile("^ba")),
@@ -25,7 +25,7 @@ func TestAccDataSourceScaffolding(t *testing.T) {
 	})
 }
 
-const testAccDataSourceScaffolding = `
+const testAccDataSourceChristmasTree = `
 data "scaffolding_data_source" "foo" {
   sample_attribute = "bar"
 }

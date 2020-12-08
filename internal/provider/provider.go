@@ -7,14 +7,15 @@ import (
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 )
 
+// New initializes the provider
 func New(version string) func() *schema.Provider {
 	return func() *schema.Provider {
 		p := &schema.Provider{
 			DataSourcesMap: map[string]*schema.Resource{
-				"scaffolding_data_source": dataSourceScaffolding(),
+				"christmas-tree_data_source": dataSourceChristmasTree(),
 			},
 			ResourcesMap: map[string]*schema.Resource{
-				"scaffolding_resource": resourceScaffolding(),
+				"christmas-tree_resource": resourceChristmasTree(),
 			},
 		}
 

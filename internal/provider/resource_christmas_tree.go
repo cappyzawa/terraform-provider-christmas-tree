@@ -7,12 +7,12 @@ import (
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 )
 
-func resourceScaffolding() *schema.Resource {
+func resourceChristmasTree() *schema.Resource {
 	return &schema.Resource{
-		CreateContext: resourceScaffoldingCreate,
-		ReadContext:   resourceScaffoldingRead,
-		UpdateContext: resourceScaffoldingUpdate,
-		DeleteContext: resourceScaffoldingDelete,
+		CreateContext: resourceChristmasTreeCreate,
+		ReadContext:   resourceChristmasTreeRead,
+		UpdateContext: resourceChristmasTreeUpdate,
+		DeleteContext: resourceChristmasTreeDelete,
 
 		Schema: map[string]*schema.Schema{
 			"sample_attribute": {
@@ -23,7 +23,7 @@ func resourceScaffolding() *schema.Resource {
 	}
 }
 
-func resourceScaffoldingCreate(ctx context.Context, d *schema.ResourceData, meta interface{}) diag.Diagnostics {
+func resourceChristmasTreeCreate(ctx context.Context, d *schema.ResourceData, meta interface{}) diag.Diagnostics {
 	// use the meta value to retrieve your client from the provider configure method
 	// client := meta.(*apiClient)
 
@@ -33,21 +33,21 @@ func resourceScaffoldingCreate(ctx context.Context, d *schema.ResourceData, meta
 	return diag.Errorf("not implemented")
 }
 
-func resourceScaffoldingRead(ctx context.Context, d *schema.ResourceData, meta interface{}) diag.Diagnostics {
+func resourceChristmasTreeRead(ctx context.Context, d *schema.ResourceData, meta interface{}) diag.Diagnostics {
 	// use the meta value to retrieve your client from the provider configure method
 	// client := meta.(*apiClient)
 
 	return diag.Errorf("not implemented")
 }
 
-func resourceScaffoldingUpdate(ctx context.Context, d *schema.ResourceData, meta interface{}) diag.Diagnostics {
+func resourceChristmasTreeUpdate(ctx context.Context, d *schema.ResourceData, meta interface{}) diag.Diagnostics {
 	// use the meta value to retrieve your client from the provider configure method
 	// client := meta.(*apiClient)
 
 	return diag.Errorf("not implemented")
 }
 
-func resourceScaffoldingDelete(ctx context.Context, d *schema.ResourceData, meta interface{}) diag.Diagnostics {
+func resourceChristmasTreeDelete(ctx context.Context, d *schema.ResourceData, meta interface{}) diag.Diagnostics {
 	// use the meta value to retrieve your client from the provider configure method
 	// client := meta.(*apiClient)
 

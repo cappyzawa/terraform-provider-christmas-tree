@@ -15,7 +15,7 @@ var (
 	version string = "dev"
 
 	// goreleaser can also pass the specific commit if you want
-	// commit  string = ""
+	commit string = ""
 )
 
 func main() {
@@ -27,8 +27,7 @@ func main() {
 	opts := &plugin.ServeOpts{ProviderFunc: provider.New(version)}
 
 	if debugMode {
-		// TODO: update this string with the full name of your provider as used in your configs
-		err := plugin.Debug(context.Background(), "registry.terraform.io/hashicorp/scaffolding", opts)
+		err := plugin.Debug(context.Background(), "registry.terraform.io/cappyzawa/christmas-tree", opts)
 		if err != nil {
 			log.Fatal(err.Error())
 		}
