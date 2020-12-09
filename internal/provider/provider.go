@@ -12,10 +12,10 @@ func New(version string) func() *schema.Provider {
 	return func() *schema.Provider {
 		p := &schema.Provider{
 			DataSourcesMap: map[string]*schema.Resource{
-				"christmas-tree_data_source": dataSourceChristmasTree(),
+				"christmas-tree": dataSourceChristmasTree(),
 			},
 			ResourcesMap: map[string]*schema.Resource{
-				"christmas-tree_resource": resourceChristmasTree(),
+				"christmas-tree": resourceChristmasTree(),
 			},
 		}
 
