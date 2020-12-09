@@ -89,7 +89,7 @@ func resourceChristmasTreeUpdate(ctx context.Context, d *schema.ResourceData, me
 			})
 		}
 	}
-	return createOrUpdate(ctx, d)
+	return append(diags, createOrUpdate(ctx, d)...)
 }
 
 func resourceChristmasTreeDelete(ctx context.Context, d *schema.ResourceData, meta interface{}) diag.Diagnostics {
