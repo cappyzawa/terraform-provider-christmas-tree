@@ -9,7 +9,13 @@ description: |-
 
 
 
+## Example Usage
 
+```terraform
+data "christmas-tree" "example" {
+  path = "/tmp/example"
+}
+```
 
 ## Schema
 

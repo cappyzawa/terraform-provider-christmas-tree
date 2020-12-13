@@ -25,6 +25,8 @@ const (
 
 func resourceChristmasTree() *schema.Resource {
 	return &schema.Resource{
+		Description: "This resource provides virtual christmas tree to your machine.",
+
 		CreateContext: resourceChristmasTreeCreate,
 		ReadContext:   resourceChristmasTreeRead,
 		UpdateContext: resourceChristmasTreeUpdate,

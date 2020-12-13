@@ -9,6 +9,10 @@ description: |-
 
 
 
+## Example Usage
 
+```terraform
+provider "chirstmas-tree" {}
+```
 
 ## Schema
