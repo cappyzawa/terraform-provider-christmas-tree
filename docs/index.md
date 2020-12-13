@@ -1,11 +1,14 @@
-# Christmas Tree
+---
+page_title: "christmas-tree Provider"
+subcategory: ""
+description: |-
+  
+---
 
-This provider provides a virtual christmas tree to your machine.
+# christmas-tree Provider
 
-## Example Usage
 
-```hcl
-resource "christmas-tree" "example" {
-  path = "/tmp/tree.txt"
-}
-```
+
+
+
+## Schema

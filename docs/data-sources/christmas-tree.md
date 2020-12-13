@@ -1,24 +1,25 @@
-# christmas-tree
+---
+page_title: "christmas-tree Data Source - terraform-provider-christmas-tree"
+subcategory: ""
+description: |-
+  
+---
 
-This data source gets a christmas tree based on file path.
+# Data Source `christmas-tree`
 
-## Example Usage
 
-```hcl
-data "christmas-tree" "example" {
-  path = "/tmp/tree.txt"
-}
 
-output "example" {
-  value = file(data.christmas-tree.example.path)
-}
-```
 
-## Argument References
 
-* `path`: (Required) The PATH for getting christmas tree.
+## Schema
 
-## Attributes References
+### Required
 
-* `path`: The PATH for getting a christmas tree.
-* `tree`: A string representing a christmas tree.
+- **path** (String, Required)
+
+### Optional
+
+- **id** (String, Optional) The ID of this resource.
+- **tree** (String, Optional)
+
+
