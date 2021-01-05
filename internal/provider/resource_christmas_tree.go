@@ -35,6 +35,7 @@ func resourceChristmasTree() *schema.Resource {
 		Schema: map[string]*schema.Schema{
 			"path": {
 				Type:     schema.TypeString,
+				ForceNew: true,
 				Required: true,
 			},
 			"ball_color": {

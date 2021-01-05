@@ -21,11 +21,11 @@ data "christmas-tree" "example" {
 
 ### Required
 
-- **path** (String, Required)
+- **path** (String)
 
 ### Optional
 
-- **id** (String, Optional) The ID of this resource.
-- **tree** (String, Optional)
+- **id** (String) The ID of this resource.
+- **tree** (String)
 
 
