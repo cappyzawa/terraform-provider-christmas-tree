@@ -35,4 +35,10 @@ resource "christmas-tree" "example" {
 - **light_color** (String) available colors: "black", "red", "green", "yellow", "blue", "magenta", "cyan", "white", "default"
 - **star_color** (String) available colors: "black", "red", "green", "yellow", "blue", "magenta", "cyan", "white", "default"
 
+## Import
 
+Import is supported using the following syntax:
+
+```shell
+terraform import christmas-tree.example <path>
+```

@@ -31,7 +31,12 @@ func resourceChristmasTree() *schema.Resource {
 		ReadContext:   resourceChristmasTreeRead,
 		UpdateContext: resourceChristmasTreeUpdate,
 		DeleteContext: resourceChristmasTreeDelete,
-
+		Importer: &schema.ResourceImporter{
+			StateContext: func(ctx context.Context, d *schema.ResourceData, meta interface{}) ([]*schema.ResourceData, error) {
+				d.Set("path", d.Id())
+				return []*schema.ResourceData{d}, nil
+			},
+		},
 		Schema: map[string]*schema.Schema{
 			"path": {
 				Type:     schema.TypeString,
