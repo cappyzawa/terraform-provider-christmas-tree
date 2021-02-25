@@ -1,7 +1,3 @@
-package provider
-
-// ChristmasTreeText draws cristmas tree as ascii art
-const ChristmasTreeText = `
        .o
       .*.'.
      .'.'o'.
@@ -14,4 +10,3 @@ const ChristmasTreeText = `
       \___/
 
  Merry Christmas!
- `

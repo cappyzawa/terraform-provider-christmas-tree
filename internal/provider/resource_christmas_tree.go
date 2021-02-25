@@ -2,6 +2,7 @@ package provider
 
 import (
 	"context"
+	_ "embed"
 	"errors"
 	"fmt"
 	"os"
@@ -22,6 +23,9 @@ const (
 
 	colorDescription = `available colors: "black", "red", "green", "yellow", "blue", "magenta", "cyan", "white", "default"`
 )
+
+//go:embed christmas_tree.txt
+var christmasTreeTxt string
 
 func resourceChristmasTree() *schema.Resource {
 	return &schema.Resource{
@@ -129,7 +133,7 @@ func createOrUpdate(ctx context.Context, d *schema.ResourceData) diag.Diagnostic
 		LeafChar:  "green",
 	}
 
-	tree := ChristmasTreeText
+	tree := christmasTreeTxt
 
 	var err error
 	for char, color := range m {
