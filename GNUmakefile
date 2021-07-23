@@ -10,7 +10,7 @@ default: testacc
 # Run acceptance tests
 .PHONY: testacc
 testacc:
-	TF_ACC=1 go test ./... -v $(TESTARGS) -timeout 120m
+	TF_ACC=1 go test -cover ./... -v $(TESTARGS) -timeout 120m
 
 build:
 	go build -o ${BINARY}
