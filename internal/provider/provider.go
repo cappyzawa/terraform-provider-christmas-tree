@@ -7,6 +7,10 @@ import (
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 )
 
+func init() {
+	schema.DescriptionKind = schema.StringMarkdown
+}
+
 // New initializes the provider
 func New(version string) func() *schema.Provider {
 	return func() *schema.Provider {
@@ -25,8 +29,7 @@ func New(version string) func() *schema.Provider {
 	}
 }
 
-type apiClient struct {
-	// Add whatever fields, client or connection info, etc. here
+type apiClient struct { // Add whatever fields, client or connection info, etc. here
 	// you would need to setup to communicate with the upstream
 	// API.
 }

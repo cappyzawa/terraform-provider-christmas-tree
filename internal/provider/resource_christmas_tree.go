@@ -21,7 +21,7 @@ const (
 	// LeafChar describes a character of leaf
 	LeafChar = "."
 
-	colorDescription = `available colors: "black", "red", "green", "yellow", "blue", "magenta", "cyan", "white", "default"`
+	colorDescription = "available colors: `black`, `red`, `green`, `yellow`, `blue`, `magenta`, `cyan`, `white`, `default`."
 )
 
 //go:embed christmas_tree.txt
@@ -43,26 +43,27 @@ func resourceChristmasTree() *schema.Resource {
 		},
 		Schema: map[string]*schema.Schema{
 			"path": {
-				Type:     schema.TypeString,
-				ForceNew: true,
-				Required: true,
+				Type:        schema.TypeString,
+				ForceNew:    true,
+				Required:    true,
+				Description: "Path of target file",
 			},
 			"ball_color": {
 				Type:        schema.TypeString,
 				Default:     "default",
-				Description: colorDescription,
+				Description: "Color of decorating balls. " + colorDescription,
 				Optional:    true,
 			},
 			"star_color": {
 				Type:        schema.TypeString,
 				Default:     "default",
-				Description: colorDescription,
+				Description: "Color of decorating stars. " + colorDescription,
 				Optional:    true,
 			},
 			"light_color": {
 				Type:        schema.TypeString,
 				Default:     "default",
-				Description: colorDescription,
+				Description: "Light of decorating lights. " + colorDescription,
 				Optional:    true,
 			},
 		},
