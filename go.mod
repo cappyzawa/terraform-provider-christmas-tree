@@ -5,7 +5,7 @@ go 1.17
 require (
 	github.com/gookit/color v1.5.0
 	github.com/hashicorp/go-multierror v1.1.1 // indirect
-	github.com/hashicorp/terraform-plugin-docs v0.6.0
+	github.com/hashicorp/terraform-plugin-docs v0.7.0
 	github.com/hashicorp/terraform-plugin-sdk/v2 v2.11.0
 )
 
