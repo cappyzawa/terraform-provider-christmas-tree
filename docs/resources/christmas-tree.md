@@ -26,14 +26,17 @@ resource "christmas-tree" "example" {
 
 ### Required
 
-- **path** (String) Path of target file
+- `path` (String) Path of target file
 
 ### Optional
 
-- **ball_color** (String) Color of decorating balls. available colors: `black`, `red`, `green`, `yellow`, `blue`, `magenta`, `cyan`, `white`, `default`.
-- **id** (String) The ID of this resource.
-- **light_color** (String) Light of decorating lights. available colors: `black`, `red`, `green`, `yellow`, `blue`, `magenta`, `cyan`, `white`, `default`.
-- **star_color** (String) Color of decorating stars. available colors: `black`, `red`, `green`, `yellow`, `blue`, `magenta`, `cyan`, `white`, `default`.
+- `ball_color` (String) Color of decorating balls. available colors: `black`, `red`, `green`, `yellow`, `blue`, `magenta`, `cyan`, `white`, `default`.
+- `light_color` (String) Light of decorating lights. available colors: `black`, `red`, `green`, `yellow`, `blue`, `magenta`, `cyan`, `white`, `default`.
+- `star_color` (String) Color of decorating stars. available colors: `black`, `red`, `green`, `yellow`, `blue`, `magenta`, `cyan`, `white`, `default`.
+
+### Read-Only
+
+- `id` (String) The ID of this resource.
 
 ## Import
 
