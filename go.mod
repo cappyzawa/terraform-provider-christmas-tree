@@ -1,6 +1,6 @@
 module github.com/hashicorp/terraform-provider-christmas-tree
 
-go 1.17
+go 1.18
 
 require (
 	github.com/gookit/color v1.5.1
