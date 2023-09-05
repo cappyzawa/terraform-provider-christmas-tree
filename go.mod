@@ -3,7 +3,7 @@ module github.com/hashicorp/terraform-provider-christmas-tree
 go 1.18
 
 require (
-	github.com/gookit/color v1.5.3
+	github.com/gookit/color v1.5.4
 	github.com/hashicorp/go-multierror v1.1.1 // indirect
 	github.com/hashicorp/terraform-plugin-docs v0.16.0
 	github.com/hashicorp/terraform-plugin-sdk/v2 v2.28.0
